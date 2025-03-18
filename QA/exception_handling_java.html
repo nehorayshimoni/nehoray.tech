@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="keywords" content="Post 1 Headline">
+  <meta name="description" content="">
+  <title>Exception Handling in Java</title>
+  <link rel="stylesheet" href="../nicepage.css" media="screen">
+  <link rel="stylesheet" href="../Post-Template.css" media="screen">
+  <link rel="shortcut icon" href="../images/favicon2.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="about.css">
+  <script class="u-script" type="text/javascript" src="../jquery.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="../nicepage.js" defer=""></script>
+  <meta name="generator" content="Nicepage 5.13.1, nicepage.com">
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+
+
+
+
+  <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+  <meta name="theme-color" content="#478ac9">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/">
+</head>
+
+<body class="u-body u-palette-1-base u-xl-mode" data-lang="en">
+  <header class="u-box-shadow u-clearfix u-header u-white u-header" id="sec-6e12">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <h3 class="u-text u-text-custom-color-1 u-text-default u-text-1">
+        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1"
+          href="../index.html">Nehoray</a>
+      </h3>
+      <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+        <div class="menu-collapse"
+          style="font-size: 1rem; letter-spacing: 0px; text-transform: uppercase; font-weight: 700;">
+          <a class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-decoration u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+            href="#">
+            <svg class="u-svg-link" viewBox="0 0 24 24">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
+            </svg>
+            <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px"
+              xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+              <g>
+                <rect y="1" width="16" height="2"></rect>
+                <rect y="7" width="16" height="2"></rect>
+                <rect y="13" width="16" height="2"></rect>
+              </g>
+            </svg>
+          </a>
+        </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-spacing-30 u-unstyled u-nav-1">
+              <li class="u-nav-item">
+                <a class="u-border-5 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="../index.html" style="padding: 10px 12px;">Home</a>
+              </li>
+              <li class="u-nav-item">
+                <a class="u-border-5 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="../QA/Course.html" rel="nofollow" style="padding: 10px 12px;">QA Course - Free</a>
+              </li>
+            </ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+               <ul class="u-nav u-popupmenu-items u-unstyled u-nav-2" style="margin-left: 20px;"> <li class="u-nav-item"><a class="u-button-style u-nav-link" href="../index.html">Home</a>
+                  </li><li class="u-nav-item"></li>
+                <ul class="u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link active" href="../QA/Course.html">QA Course - Free</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <section class="u-align-center u-clearfix u-palette-1-light-3 u-section-1" id="sec-bdf0">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <!--post_details--><!--post_details_options_json--><!--{"source":""}--><!--/post_details_options_json--><!--blog_post-->
+      <div class="u-container-style u-expanded-width u-post-details u-post-details-1">
+        <div class="u-container-layout u-container-layout-1"><!--blog_post_image-->
+          <img alt="" class="u-blog-control u-expanded-width u-image u-image-round u-radius-25 u-image-1"
+            src="../images/exception_handling_java.png"><!--/blog_post_image--><!--blog_post_header-->
+          <h2 class="u-align-center u-blog-control u-text u-text-1">Exception Handling in Java</h2>
+          <!--/blog_post_header--><!--blog_post_content-->
+ <div class="fr-view u-clearfix u-rich-text u-text u-text-2">
+      <p> <br> </p>
+              <p id="isPasted">
+                <span style="font-size: 1.875rem;">
+                  <span style="font-size: 1.5rem;">
+                    <span style="font-size: 1rem;">
+                      <span style="font-size: 1.25rem;">
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </p>
+	            <p>
+	      <h3 style="text-align: left;">
+                <span style="font-weight: 700;">Introduction</span>
+              </h3>
+	            <p>
+              <p>
+              <span style="font-size: 1.4rem;">Exception handling is a crucial aspect of Java programming that allows developers to gracefully manage unexpected events in their code. In this article, we'll explore the basics of exception handling, including what exceptions are, how to handle them using try-catch blocks, different types of exceptions, the exception hierarchy, and the role of finally blocks.</span>
+              </p>
+             <p> <br /> </p>
+             <h3 style="text-align: left;">
+              <span style="font-weight: 700;">Understanding Exceptions</span>
+            </h3>
+            <p>
+            <p>
+            <span style="font-size: 1.4rem;">An exception is an undesirable event that disrupts the normal flow of a program. For example, attempting to parse an integer from the string "pants" will result in a NumberFormatException. Without proper handling, the program terminates, displaying an error message.</span>
+            </p>
+           <p> <br /> </p>
+         <h3><span style="font-weight: 700;">Try-Catch Blocks</span>
+         </h3>
+         <p>
+         <p>
+           <span style="font-size: 1.4rem;">To handle exceptions, Java provides try-catch blocks. The <span style="font-size: 1.4rem; background-color: black; color: white;"><code>try</code></span> block contains code that might cause an exception, and the <span style="font-size: 1.4rem; background-color: black; color: white;"><code>catch</code></span> block catches and handles specific types of exceptions.</span>
+         <p>
+          <div class="field box" id="output"><pre style="color:#fff;background-color:#111;"><code><span style="display:flex;"><span><span style="color:#fb660a;font-weight:bold">public</span> <span style="color:#fb660a;font-weight:bold">class</span> Main {
+          </span></span><span style="display:flex;"><span>
+          </span></span><span style="display:flex;"><span>    <span style="color:#fb660a;font-weight:bold">public</span> <span style="color:#fb660a;font-weight:bold">static</span> <span style="color:#cdcaa9;font-weight:bold">void</span> <span style="color:#ff0086;font-weight:bold">main</span>(String[] args) {
+          </span></span><span style="display:flex;"><span>        <span style="color:#fb660a;font-weight:bold">try</span> {
+          </span></span><span style="display:flex;"><span>            <span style="color:#080;background-color:#0f140f;font-style:italic">// Code that might cause an exception
+          </span></span></span><span style="display:flex;"><span><span style="color:#080;background-color:#0f140f;font-style:italic"></span>            <span style="color:#cdcaa9;font-weight:bold">int</span> result = Integer.<span style="color:#ff0086;font-weight:bold">parseInt</span>(<span style="color:#0086d2">"pants"</span>);
+          </span></span><span style="display:flex;"><span>        } <span style="color:#fb660a;font-weight:bold">catch</span> (NumberFormatException e) {
+          </span></span><span style="display:flex;"><span>            <span style="color:#080;background-color:#0f140f;font-style:italic">// Handling the specific exception
+          </span></span></span><span style="display:flex;"><span><span style="color:#080;background-color:#0f140f;font-style:italic"></span>            System.<span style="color:#ff0086;font-weight:bold">out</span>.<span style="color:#ff0086;font-weight:bold">println</span>(<span style="color:#0086d2">"Hey dude, you can't make an int out of that! Stop trying!"</span>);
+          </span></span><span style="display:flex;"><span>        }
+          </span></span><span style="display:flex;"><span>    }
+          </span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+         <p>
+         <span style="font-size: 1.4rem;">In this example, the <span style="font-size: 1.4rem; background-color: black; color: white;"><code>parseInt</code></span> method attempts to convert the string "pants" to an integer. The catch block catches the <span style="font-size: 1.4rem; background-color: black; color: white;"><code>NumberFormatException</code></span> that is thrown and prints a user-friendly message instead of letting the program terminate abruptly.</span>
+         <p>
+        <p> <br /> </p>
+        <h3><span style="font-weight: 700;">Common Catch Examples in Exception Handling</span>
+      </h3>
+      <p>
+      <p>
+      <span style="font-size: 1.4rem;">When implementing exception handling in Java, it's crucial to be familiar with common catch examples:</span>
+      <p>
+      <span style="font-size: 1.4rem;"><b>NumberFormatException:</b> Occurs when attempting to convert a string to a numeric format, but the string does not contain a valid numeric value.</span>
+      <p>
+      <span style="font-size: 1.4rem;"><b>NullPointerException:</b> Happens when trying to access or manipulate an object reference that has a null value.</span>
+      <p>
+      <span style="font-size: 1.4rem;"><b>ArrayIndexOutOfBoundsException:</b> Thrown when trying to access an array element with an index outside the bounds of the array.</span>
+      <p>
+      <span style="font-size: 1.4rem;"><b>FileNotFoundException:</b> Occurs when attempting to access a file that does not exist or cannot be opened.</span>
+      <p>
+      <span style="font-size: 1.4rem;"><b>IOException:</b> Indicates an error occurred while performing I/O operations, such as reading from or writing to a file.</span>
+      <p>
+      <span style="font-size: 1.4rem;">By understanding and effectively handling these common catch examples, you can write robust and reliable exception handling code in your Java application.</span>
+      </p>
+     <p> <br /> </p>
+        <h3><span style="font-weight: 700;">Exception Hierarchy and Multi-Catch Statement</span>
+        </h3>
+        <p>
+        <p>
+          <span style="font-size: 1.4rem;">Exception handling in Java apply the exception hierarchy. The <span style="font-size: 1.4rem; background-color: black; color: white;"><code>catch</code></span> block specifies the type of exception it can handle. By catching a broader exception type, like <span style="font-size: 1.4rem; background-color: black; color: white;"><code>Exception e</code></span>, you can handle any subclass of that exception.</span>
+        <p>
+          <div class="field box" id="output"><pre style="color:#fff;background-color:#111;"><code><span style="display:flex;"><span><span style="color:#fb660a;font-weight:bold">public</span> <span style="color:#fb660a;font-weight:bold">class</span> Main {
+          </span></span><span style="display:flex;"><span>
+          </span></span><span style="display:flex;"><span>    <span style="color:#fb660a;font-weight:bold">public</span> <span style="color:#fb660a;font-weight:bold">static</span> <span style="color:#cdcaa9;font-weight:bold">void</span> <span style="color:#ff0086;font-weight:bold">main</span>(String[] args) {
+          </span></span><span style="display:flex;"><span>        <span style="color:#fb660a;font-weight:bold">try</span> {
+          </span></span><span style="display:flex;"><span>            <span style="color:#080;background-color:#0f140f;font-style:italic">// Code that might cause an exception
+          </span></span></span><span style="display:flex;"><span><span style="color:#080;background-color:#0f140f;font-style:italic"></span>            <span style="color:#cdcaa9;font-weight:bold">int</span> result = Integer.<span style="color:#ff0086;font-weight:bold">parseInt</span>(<span style="color:#0086d2">"pants"</span>);
+          </span></span><span style="display:flex;"><span>        } <span style="color:#fb660a;font-weight:bold">catch</span> (NumberFormatException | NullPointerException e) {
+          </span></span><span style="display:flex;"><span>            <span style="color:#080;background-color:#0f140f;font-style:italic">// Handling multiple types of exceptions
+          </span></span></span><span style="display:flex;"><span><span style="color:#080;background-color:#0f140f;font-style:italic"></span>            System.<span style="color:#ff0086;font-weight:bold">out</span>.<span style="color:#ff0086;font-weight:bold">println</span>(<span style="color:#0086d2">"Caught exception: "</span> + e.<span style="color:#ff0086;font-weight:bold">getClass</span>().<span style="color:#ff0086;font-weight:bold">getSimpleName</span>());
+          </span></span><span style="display:flex;"><span>        } <span style="color:#fb660a;font-weight:bold">catch</span> (Exception e) {
+          </span></span><span style="display:flex;"><span>            <span style="color:#080;background-color:#0f140f;font-style:italic">// Handling a broader exception type
+          </span></span></span><span style="display:flex;"><span><span style="color:#080;background-color:#0f140f;font-style:italic"></span>            System.<span style="color:#ff0086;font-weight:bold">out</span>.<span style="color:#ff0086;font-weight:bold">println</span>(<span style="color:#0086d2">"Caught a generic exception: "</span> + e.<span style="color:#ff0086;font-weight:bold">getClass</span>().<span style="color:#ff0086;font-weight:bold">getSimpleName</span>());
+          </span></span><span style="display:flex;"><span>        }
+          </span></span><span style="display:flex;"><span>    }
+          </span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+        <p>
+        <span style="font-size: 1.4rem;">In this example, the catch blocks demonstrate catching specific exceptions (<span style="font-size: 1.4rem; background-color: black; color: white;"><code>NumberFormatException</code></span> and <span style="font-size: 1.4rem; background-color: black; color: white;"><code>NullPointerException</code></span>). The use of | in the catch statement allows handling multiple exception types in a single block. The broader catch block for <span style="font-size: 1.4rem; background-color: black; color: white;"><code>Exception</code></span> serves as a catch-all for any other unexpected exceptions.</span>
+        <p>
+       <p> <br /> </p>
+       <h3><span style="font-weight: 700;">Exception Propagation</span>
+       </h3>
+       <p>
+       <p>
+         <span style="font-size: 1.4rem;">When an exception is not caught immediately, it propagates up the call stack to the method that called it. This enables developers to handle exceptions in higher-level methods, providing flexibility in organizing exception-handling code.</span>
+       <p>
+        <div class="field box" id="output"><pre style="color:#fff;background-color:#111;"><code><span style="display:flex;"><span><span style="color:#fb660a;font-weight:bold">public</span> <span style="color:#fb660a;font-weight:bold">class</span> Main {
+        </span></span><span style="display:flex;"><span>
+        </span></span><span style="display:flex;"><span>    <span style="color:#fb660a;font-weight:bold">public</span> <span style="color:#fb660a;font-weight:bold">static</span> <span style="color:#cdcaa9;font-weight:bold">void</span> <span style="color:#ff0086;font-weight:bold">main</span>(String[] args) {
+        </span></span><span style="display:flex;"><span>        <span style="color:#fb660a;font-weight:bold">try</span> {
+        </span></span><span style="display:flex;"><span>            <span style="color:#080;background-color:#0f140f;font-style:italic">// Code in the main method
+        </span></span></span><span style="display:flex;"><span><span style="color:#080;background-color:#0f140f;font-style:italic"></span>            callMethod();
+        </span></span><span style="display:flex;"><span>        } <span style="color:#fb660a;font-weight:bold">catch</span> (NumberFormatException e) {
+        </span></span><span style="display:flex;"><span>            System.<span style="color:#ff0086;font-weight:bold">out</span>.<span style="color:#ff0086;font-weight:bold">println</span>(<span style="color:#0086d2">"Exception caught in the main method: "</span> + e.<span style="color:#ff0086;font-weight:bold">getMessage</span>());
+        </span></span><span style="display:flex;"><span>        }
+        </span></span><span style="display:flex;"><span>    }
+        </span></span><span style="display:flex;"><span>
+        </span></span><span style="display:flex;"><span>    <span style="color:#fb660a;font-weight:bold">private</span> <span style="color:#fb660a;font-weight:bold">static</span> <span style="color:#cdcaa9;font-weight:bold">void</span> <span style="color:#ff0086;font-weight:bold">callMethod</span>() {
+        </span></span><span style="display:flex;"><span>        <span style="color:#080;background-color:#0f140f;font-style:italic">// Code in another method
+        </span></span></span><span style="display:flex;"><span><span style="color:#080;background-color:#0f140f;font-style:italic"></span>        <span style="color:#cdcaa9;font-weight:bold">int</span> result = Integer.<span style="color:#ff0086;font-weight:bold">parseInt</span>(<span style="color:#0086d2">"pants"</span>);
+        </span></span><span style="display:flex;"><span>    }
+        </span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+       <p>
+       <span style="font-size: 1.4rem;">In this example, the <span style="font-size: 1.4rem; background-color: black; color: white;"><code>callMethod</code></span> is called from the <span style="font-size: 1.4rem; background-color: black; color: white;"><code>main</code></span> method, and the <span style="font-size: 1.4rem; background-color: black; color: white;"><code>NumberFormatException</code></span> is thrown in <span style="font-size: 1.4rem; background-color: black; color: white;"><code>callMethod</code></span>. The exception propagates up the call stack to the <span style="font-size: 1.4rem; background-color: black; color: white;"><code>main</code></span> method, where it is caught and handled.</span>
+       <p>
+      <p> <br /> </p>
+      <h3><span style="font-weight: 700;">Finally Blocks</span>
+      </h3>
+      <p>
+      <p>
+      <span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>finally</code></span> blocks contain code that always executes, whether an exception occurs or not. It ensures that critical cleanup or resource management code is executed, making it suitable for tasks like closing database connections or file streams.</span>
+      <p>
+        <div class="field box" id="output"><pre style="color:#fff;background-color:#111;"><code><span style="display:flex;"><span><span style="color:#fb660a;font-weight:bold">public</span> <span style="color:#fb660a;font-weight:bold">class</span> Main {
+        </span></span><span style="display:flex;"><span>
+        </span></span><span style="display:flex;"><span>    <span style="color:#fb660a;font-weight:bold">public</span> <span style="color:#fb660a;font-weight:bold">static</span> <span style="color:#cdcaa9;font-weight:bold">void</span> <span style="color:#ff0086;font-weight:bold">main</span>(String[] args) {
+        </span></span><span style="display:flex;"><span>        <span style="color:#fb660a;font-weight:bold">try</span> {
+        </span></span><span style="display:flex;"><span>            <span style="color:#080;background-color:#0f140f;font-style:italic">// Code that might cause an exception
+        </span></span></span><span style="display:flex;"><span><span style="color:#080;background-color:#0f140f;font-style:italic"></span>            <span style="color:#cdcaa9;font-weight:bold">int</span> result = Integer.<span style="color:#ff0086;font-weight:bold">parseInt</span>(<span style="color:#0086d2">"1"</span>);
+        </span></span><span style="display:flex;"><span>            System.<span style="color:#ff0086;font-weight:bold">out</span>.<span style="color:#ff0086;font-weight:bold">println</span>(<span style="color:#0086d2">"Parsed successfully: "</span> + result);
+        </span></span><span style="display:flex;"><span>        } <span style="color:#fb660a;font-weight:bold">catch</span> (NumberFormatException e) {
+        </span></span><span style="display:flex;"><span>            System.<span style="color:#ff0086;font-weight:bold">out</span>.<span style="color:#ff0086;font-weight:bold">println</span>(<span style="color:#0086d2">"Exception caught: "</span> + e.<span style="color:#ff0086;font-weight:bold">getMessage</span>());
+        </span></span><span style="display:flex;"><span>        } <span style="color:#fb660a;font-weight:bold">finally</span> {
+        </span></span><span style="display:flex;"><span>            <span style="color:#080;background-color:#0f140f;font-style:italic">// Code in the finally block always executes
+        </span></span></span><span style="display:flex;"><span><span style="color:#080;background-color:#0f140f;font-style:italic"></span>            System.<span style="color:#ff0086;font-weight:bold">out</span>.<span style="color:#ff0086;font-weight:bold">println</span>(<span style="color:#0086d2">"Finally block executed, regardless of an exception."</span>);
+        </span></span><span style="display:flex;"><span>        }
+        </span></span><span style="display:flex;"><span>    }
+        </span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+      <p>
+      <span style="font-size: 1.4rem;">In this example, the <span style="font-size: 1.4rem; background-color: black; color: white;"><code>finally</code></span> block contains code that always executes, irrespective of whether an exception occurred or not. This is useful for tasks that should be performed regardless of the success or failure of the try block.</span>
+      <p>
+     <p> <br /> </p>
+    <h3><span style="font-weight: 700;">Return Statement in Finally Block</span>
+    </h3>
+    <p>
+    <p>
+    <span style="font-size: 1.4rem;">It's important to note that a <span style="font-size: 1.4rem; background-color: black; color: white;"><code>return</code></span> statement in the <span style="font-size: 1.4rem; background-color: black; color: white;"><code>finally</code></span> block can override returns from <span style="font-size: 1.4rem; background-color: black; color: white;"><code>try</code></span> or <span style="font-size: 1.4rem; background-color: black; color: white;"><code>catch</code></span> blocks, leading to unexpected behavior.</span>
+    <p>
+      <div class="field box" id="output"><pre style="color:#fff;background-color:#111;"><code><span style="display:flex;"><span><span style="color:#fb660a;font-weight:bold">public</span> <span style="color:#fb660a;font-weight:bold">class</span> Main {
+      </span></span><span style="display:flex;"><span>
+      </span></span><span style="display:flex;"><span>    <span style="color:#fb660a;font-weight:bold">public</span> <span style="color:#fb660a;font-weight:bold">static</span> <span style="color:#cdcaa9;font-weight:bold">void</span> <span style="color:#ff0086;font-weight:bold">main</span>(String[] args) {
+      </span></span><span style="display:flex;"><span>        System.<span style="color:#ff0086;font-weight:bold">out</span>.<span style="color:#ff0086;font-weight:bold">println</span>(<span style="color:#0086d2">"Result: "</span> + printANumber());
+      </span></span><span style="display:flex;"><span>    }
+      </span></span><span style="display:flex;"><span>
+      </span></span><span style="display:flex;"><span>    <span style="color:#fb660a;font-weight:bold">private</span> <span style="color:#fb660a;font-weight:bold">static</span> <span style="color:#cdcaa9;font-weight:bold">int</span> <span style="color:#ff0086;font-weight:bold">printANumber</span>() {
+      </span></span><span style="display:flex;"><span>        <span style="color:#fb660a;font-weight:bold">try</span> {
+      </span></span><span style="display:flex;"><span>            <span style="color:#fb660a;font-weight:bold">return</span> <span style="color:#0086f7;font-weight:bold">3</span>;
+      </span></span><span style="display:flex;"><span>        } <span style="color:#fb660a;font-weight:bold">catch</span> (Exception e) {
+      </span></span><span style="display:flex;"><span>            <span style="color:#fb660a;font-weight:bold">return</span> <span style="color:#0086f7;font-weight:bold">4</span>;
+      </span></span><span style="display:flex;"><span>        } <span style="color:#fb660a;font-weight:bold">finally</span> {
+      </span></span><span style="display:flex;"><span>            <span style="color:#080;background-color:#0f140f;font-style:italic">// The return in finally overrides the previous return
+      </span></span></span><span style="display:flex;"><span><span style="color:#080;background-color:#0f140f;font-style:italic"></span>            <span style="color:#fb660a;font-weight:bold">return</span> <span style="color:#0086f7;font-weight:bold">5</span>;
+      </span></span><span style="display:flex;"><span>        }
+      </span></span><span style="display:flex;"><span>    }
+      </span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+     <p>
+     <span style="font-size: 1.4rem;">In this example, the <span style="font-size: 1.4rem; background-color: black; color: white;"><code>printANumber</code></span> method tries to return 3 in the try block, catches an exception in the catch block (which is not executed), and then finally returns 5. The return in the finally block overrides the previous return statements, demonstrating the potential for unexpected behavior.</span>
+     <p>
+    <p> <br /> </p>
+	      <h3 style="text-align: left;">
+                <span style="font-weight: 700;">Conclusion</span>
+              </h3>
+	       <p>
+                <span style="font-size: 1.4rem;">Exception handling is a vital skill to reliable Java programs and other applications in general. Understanding how to use try-catch blocks, the exception hierarchy, multi-catch statements, exception propagation, and finally blocks allows you to manage unexpected events effectively. While most situations can be handled with try-catch, finally blocks offer a way to ensure essential cleanup tasks are performed, contributing to the overall stability of the code.</span>
+    <p> <br /> </p>
+    <div class="nextprev" style="clear:both; text-align: center;">
+      <a class="left" href="../QA/java_collections.html" style="float: left;">❮ Previous</a>
+      <a class="right" href="../QA/OOP_java.html" style="float: right;">Next ❯</a>
+  </div>  
+    <p></p>     
+  </section>
+  <section class="u-clearfix u-palette-1-light-3 u-section-3" id="sec-27c2">
+    <div class="u-clearfix u-sheet u-sheet-1"></div>
+  </section>
+
+  <footer class="u-align-center u-clearfix u-footer u-white u-footer" id="sec-9996">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+      <p class="u-small-text u-text u-text-variant u-text-1">
+      Made with 💙&nbsp;by
+        <a href="https://www.linkedin.com/in/nehorayshimoni/" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" target="_blank">Nehoray Shimoni</a>&nbsp;
+      </p>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

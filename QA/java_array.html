@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="keywords" content="Post 1 Headline">
+  <meta name="description" content="">
+  <title>Java Arrays</title>
+  <link rel="stylesheet" href="../nicepage.css" media="screen">
+  <link rel="stylesheet" href="../Post-Template.css" media="screen">
+  <link rel="shortcut icon" href="../images/favicon2.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="about.css">
+  <script class="u-script" type="text/javascript" src="../jquery.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="../nicepage.js" defer=""></script>
+  <meta name="generator" content="Nicepage 5.13.1, nicepage.com">
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+
+
+
+
+  <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+  <meta name="theme-color" content="#478ac9">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/">
+</head>
+
+<body class="u-body u-palette-1-base u-xl-mode" data-lang="en">
+  <header class="u-box-shadow u-clearfix u-header u-white u-header" id="sec-6e12">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <h3 class="u-text u-text-custom-color-1 u-text-default u-text-1">
+        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1"
+          href="../index.html">Nehoray</a>
+      </h3>
+      <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+        <div class="menu-collapse"
+          style="font-size: 1rem; letter-spacing: 0px; text-transform: uppercase; font-weight: 700;">
+          <a class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-decoration u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+            href="#">
+            <svg class="u-svg-link" viewBox="0 0 24 24">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
+            </svg>
+            <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px"
+              xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+              <g>
+                <rect y="1" width="16" height="2"></rect>
+                <rect y="7" width="16" height="2"></rect>
+                <rect y="13" width="16" height="2"></rect>
+              </g>
+            </svg>
+          </a>
+        </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-spacing-30 u-unstyled u-nav-1">
+              <li class="u-nav-item">
+                <a class="u-border-5 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="../index.html" style="padding: 10px 12px;">Home</a>
+              </li>
+              <li class="u-nav-item">
+                <a class="u-border-5 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="../QA/Course.html" rel="nofollow" style="padding: 10px 12px;">QA Course - Free</a>
+              </li>
+            </ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+               <ul class="u-nav u-popupmenu-items u-unstyled u-nav-2" style="margin-left: 20px;"> <li class="u-nav-item"><a class="u-button-style u-nav-link" href="../index.html">Home</a>
+                  </li><li class="u-nav-item"></li>
+                <ul class="u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link active" href="../QA/Course.html">QA Course - Free</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <section class="u-align-center u-clearfix u-palette-1-light-3 u-section-1" id="sec-bdf0">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <!--post_details--><!--post_details_options_json--><!--{"source":""}--><!--/post_details_options_json--><!--blog_post-->
+      <div class="u-container-style u-expanded-width u-post-details u-post-details-1">
+        <div class="u-container-layout u-container-layout-1"><!--blog_post_image-->
+          <img alt="" class="u-blog-control u-expanded-width u-image u-image-round u-radius-25 u-image-1"
+            src="../images/java_arrays.png"><!--/blog_post_image--><!--blog_post_header-->
+          <h2 class="u-align-center u-blog-control u-text u-text-1">Java Array</h2>
+          <!--/blog_post_header--><!--blog_post_content-->
+ <div class="fr-view u-clearfix u-rich-text u-text u-text-2">
+      <p> <br> </p>
+              <p id="isPasted">
+                <span style="font-size: 1.875rem;">
+                  <span style="font-size: 1.5rem;">
+                    <span style="font-size: 1rem;">
+                      <span style="font-size: 1.25rem;">
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </p>
+	            <p>
+	      <h3 style="text-align: left;">
+                <span style="font-weight: 700;">What is an Array?</span>
+              </h3>
+	            <p>
+              <p>
+              <span style="font-size: 1.4rem;">Think of an array as a selection of elements, like a row of boxes. Each box can hold a specific piece of information, and the entire row allows you to organize and manage multiple pieces of data together. In Java, you can use arrays to store multiple values of the same type under a single variable name.</span>
+              </p>
+             <p> <br /> </p>
+        <h3 style="text-align: left;">
+              <span style="font-weight: 700;">Declaring an Array</span>
+            </h3>
+            <p>
+            <p>
+              <span style="font-size: 1.4rem;">Imagine you want to store the scores of your favorite video games. You could create an array of integers like this:</span>
+            <p>
+            <div class="field box" id="output"><pre style="color:#fff;background-color:#111;"><code><span style="display:flex;"><span><span style="color:#cdcaa9;font-weight:bold">int</span>[] gameScores;</span></span></code></pre></div>
+            <p>
+            <span style="font-size: 1.4rem;">This line of code tells Java that you're declaring an integer array named <span style="font-size: 1.4rem; background-color: black; color: white;"><code>gameScores</code></span> It's like creating an empty row of boxes to store your scores.</span>
+            <p>
+           <p> <br /> </p>
+           <h3 style="text-align: left;">
+            <span style="font-weight: 700;">Initializing an Array</span>
+          </h3>
+          <p>
+          <p>
+            <span style="font-size: 1.4rem;">Now that you've declared your array, you need to decide how many boxes it should have and what values those boxes will initially contain. Let's say you want to store scores for three games:</span>
+          <p>
+          <div class="field box" id="output"><pre style="color:#fff;background-color:#111;"><code><span style="display:flex;"><span>gameScores = <span style="color:#fb660a;font-weight:bold">new</span> <span style="color:#cdcaa9;font-weight:bold">int</span>[<span style="color:#0086f7;font-weight:bold">3</span>];</span></span></code></pre></div>
+          <p>
+          <span style="font-size: 1.4rem;">Here, you're creating a new array of integers with a size of 3. In other words, you're making a row with three boxes to hold your scores.</span>
+          <p>
+         <p> <br /> </p>
+        <h3><span style="font-weight: 700;">Assigning Values to Array Elements</span>
+        </h3>
+        <p>
+        <p>
+          <span style="font-size: 1.4rem;">Now that you have your array set up, it's time to fill in those boxes with actual scores. You can assign values to individual elements using their indices (positions in the array). Remember, Java starts counting from 0, so the first box is at index 0, the second at index 1, and so on:</span>
+        <p>
+          <div class="field box" id="output"><pre style="color:#fff;background-color:#111;"><code><span style="display:flex;"><span>gameScores[<span style="color:#0086f7;font-weight:bold">0</span>] = <span style="color:#0086f7;font-weight:bold">95</span>;  <span style="color:#080;background-color:#0f140f;font-style:italic">// Score for the first game
+          </span></span></span><span style="display:flex;"><span><span style="color:#080;background-color:#0f140f;font-style:italic"></span>gameScores[<span style="color:#0086f7;font-weight:bold">1</span>] = <span style="color:#0086f7;font-weight:bold">80</span>;  <span style="color:#080;background-color:#0f140f;font-style:italic">// Score for the second game
+          </span></span></span><span style="display:flex;"><span><span style="color:#080;background-color:#0f140f;font-style:italic"></span>gameScores[<span style="color:#0086f7;font-weight:bold">2</span>] = <span style="color:#0086f7;font-weight:bold">92</span>;  <span style="color:#080;background-color:#0f140f;font-style:italic">// Score for the third game</span></span></span></code></pre></div>
+          <p>
+        <span style="font-size: 1.4rem;">Now, your array is like a row of boxes with each box holding the score for a different game.</span>
+        <p>
+       <p> <br /> </p>
+         <h3 style="text-align: left;">
+          <span style="font-weight: 700;">Accessing Array Elements</span>
+        </h3>
+        <p>
+        <p>
+          <span style="font-size: 1.4rem;">To retrieve or use the values stored in the array, you simply reference the specific box you're interested in:</span>
+        <p>
+          <div class="field box" id="output"><pre style="color:#fff;background-color:#111;"><code><span style="display:flex;"><span><span style="color:#cdcaa9;font-weight:bold">int</span> secondGameScore = gameScores[<span style="color:#0086f7;font-weight:bold">1</span>];
+          </span></span><span style="display:flex;"><span>System.<span style="color:#ff0086;font-weight:bold">out</span>.<span style="color:#ff0086;font-weight:bold">println</span>(<span style="color:#0086d2">"Score for the second game: "</span> + secondGameScore);</span></span></code></pre></div>
+        <p>
+       <p> <br /> </p>
+       <h3 style="text-align: left;">
+        <span style="font-weight: 700;">Test It Yourself</span>
+      </h3>
+      <p>
+        <p>
+          <span style="font-size: 1.4rem;">With what we learned, we can run our first Java program that uses arrays! In this case, the program will print the score of the second game to the console. Here is the complete code:</span>
+          <p>
+            <div class="field box" id="output"><pre style="color:#fff;background-color:#111;"><code><span style="display:flex;"><span><span style="color:#fb660a;font-weight:bold">public</span> <span style="color:#fb660a;font-weight:bold">class</span> Main {
+            </span></span><span style="display:flex;"><span>    <span style="color:#fb660a;font-weight:bold">public</span> <span style="color:#fb660a;font-weight:bold">static</span> <span style="color:#cdcaa9;font-weight:bold">void</span> <span style="color:#ff0086;font-weight:bold">main</span>(String[] args) {
+            </span></span><span style="display:flex;"><span>        <span style="color:#cdcaa9;font-weight:bold">int</span>[] gameScores = <span style="color:#fb660a;font-weight:bold">new</span> <span style="color:#cdcaa9;font-weight:bold">int</span>[<span style="color:#0086f7;font-weight:bold">3</span>];
+            </span></span><span style="display:flex;"><span>        gameScores[<span style="color:#0086f7;font-weight:bold">0</span>] = <span style="color:#0086f7;font-weight:bold">95</span>;  <span style="color:#080;background-color:#0f140f;font-style:italic">// Score for the first game
+            </span></span></span><span style="display:flex;"><span><span style="color:#080;background-color:#0f140f;font-style:italic"></span>        gameScores[<span style="color:#0086f7;font-weight:bold">1</span>] = <span style="color:#0086f7;font-weight:bold">80</span>;  <span style="color:#080;background-color:#0f140f;font-style:italic">// Score for the second game
+            </span></span></span><span style="display:flex;"><span><span style="color:#080;background-color:#0f140f;font-style:italic"></span>        gameScores[<span style="color:#0086f7;font-weight:bold">2</span>] = <span style="color:#0086f7;font-weight:bold">92</span>;  <span style="color:#080;background-color:#0f140f;font-style:italic">// Score for the third game
+            </span></span></span><span style="display:flex;"><span><span style="color:#080;background-color:#0f140f;font-style:italic"></span>        <span style="color:#cdcaa9;font-weight:bold">int</span> secondGameScore = gameScores[<span style="color:#0086f7;font-weight:bold">1</span>];
+            </span></span><span style="display:flex;"><span>        System.<span style="color:#ff0086;font-weight:bold">out</span>.<span style="color:#ff0086;font-weight:bold">println</span>(<span style="color:#0086d2">"Score for the second game: "</span> + secondGameScore);
+            </span></span><span style="display:flex;"><span>    }
+            </span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+          <p>
+         <p> <br /> </p>
+     <h3 style="text-align: left;">
+      <span style="font-weight: 700;">Iterating Through an Array</span>
+    </h3>
+    <p>
+    <p>
+      <span style="font-size: 1.4rem;">Sometimes, you want to go through all the elements in an array. You can use a <span style="font-size: 1.4rem; background-color: black; color: white;"><code>for</code></span> loop statement to iterate over the array and perform actions on each value:</span>
+    <p>
+      <div class="field box" id="output"><pre style="color:#fff;background-color:#111;"><code><span style="display:flex;"><span><span style="color:#fb660a;font-weight:bold">for</span> (<span style="color:#cdcaa9;font-weight:bold">int</span> i = <span style="color:#0086f7;font-weight:bold">0</span>; i &lt; gameScores.<span style="color:#ff0086;font-weight:bold">length</span>; i++) {
+      </span></span><span style="display:flex;"><span>    System.<span style="color:#ff0086;font-weight:bold">out</span>.<span style="color:#ff0086;font-weight:bold">println</span>(<span style="color:#0086d2">"Score for game "</span> + (i + <span style="color:#0086f7;font-weight:bold">1</span>) + <span style="color:#0086d2">": "</span> + gameScores[i]);
+      </span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+    <p>
+    <span style="font-size: 1.4rem;">This loop prints out all the game scores along with their respective indices.</span>
+    <p> <br /> </p>
+    <span style="font-size: 1.4rem;">If you want to test it yourself, here is the complete code:</span>
+    <p>
+      <div class="field box" id="output"><pre style="color:#fff;background-color:#111;"><code><span style="display:flex;"><span><span style="color:#fb660a;font-weight:bold">public</span> <span style="color:#fb660a;font-weight:bold">class</span> Main {
+      </span></span><span style="display:flex;"><span>    <span style="color:#fb660a;font-weight:bold">public</span> <span style="color:#fb660a;font-weight:bold">static</span> <span style="color:#cdcaa9;font-weight:bold">void</span> <span style="color:#ff0086;font-weight:bold">main</span>(String[] args) {
+      </span></span><span style="display:flex;"><span>
+      </span></span><span style="display:flex;"><span>        <span style="color:#cdcaa9;font-weight:bold">int</span>[] gameScores = <span style="color:#fb660a;font-weight:bold">new</span> <span style="color:#cdcaa9;font-weight:bold">int</span>[<span style="color:#0086f7;font-weight:bold">3</span>];
+      </span></span><span style="display:flex;"><span>
+      </span></span><span style="display:flex;"><span>        gameScores[<span style="color:#0086f7;font-weight:bold">0</span>] = <span style="color:#0086f7;font-weight:bold">95</span>;  <span style="color:#080;background-color:#0f140f;font-style:italic">// Score for the first game
+      </span></span></span><span style="display:flex;"><span><span style="color:#080;background-color:#0f140f;font-style:italic"></span>        gameScores[<span style="color:#0086f7;font-weight:bold">1</span>] = <span style="color:#0086f7;font-weight:bold">80</span>;  <span style="color:#080;background-color:#0f140f;font-style:italic">// Score for the second game
+      </span></span></span><span style="display:flex;"><span><span style="color:#080;background-color:#0f140f;font-style:italic"></span>        gameScores[<span style="color:#0086f7;font-weight:bold">2</span>] = <span style="color:#0086f7;font-weight:bold">92</span>;  <span style="color:#080;background-color:#0f140f;font-style:italic">// Score for the third game
+      </span></span></span><span style="display:flex;"><span><span style="color:#080;background-color:#0f140f;font-style:italic"></span>
+      </span></span><span style="display:flex;"><span>        <span style="color:#fb660a;font-weight:bold">for</span> (<span style="color:#cdcaa9;font-weight:bold">int</span> i = <span style="color:#0086f7;font-weight:bold">0</span>; i &lt; gameScores.<span style="color:#ff0086;font-weight:bold">length</span>; i++) {
+      </span></span><span style="display:flex;"><span>            System.<span style="color:#ff0086;font-weight:bold">out</span>.<span style="color:#ff0086;font-weight:bold">println</span>(<span style="color:#0086d2">"Score for game "</span> + (i + <span style="color:#0086f7;font-weight:bold">1</span>) + <span style="color:#0086d2">": "</span> + gameScores[i]);
+      </span></span><span style="display:flex;"><span>        }
+      </span></span><span style="display:flex;"><span>    }
+      </span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+    <p>
+    <p> <br /> </p>
+    <h3><span style="font-weight: 700;">Alternative Array Initialization</span>
+    </h3>
+    <p>
+    <p>
+      <span style="font-size: 1.4rem;">In addition to the traditional array initialization method, Java provides a more concise way to create and initialize an array in a single line. This is particularly useful when the values are known at the time of declaration.</span>
+    <p>
+      <div class="field box" id="output"><pre style="color:#fff;background-color:#111;"><code><span style="display:flex;"><span><span style="color:#cdcaa9;font-weight:bold">int</span>[] gameScores = {<span style="color:#0086f7;font-weight:bold">95</span>, <span style="color:#0086f7;font-weight:bold">80</span>, <span style="color:#0086f7;font-weight:bold">92</span>};</span></span></code></pre></div>
+    <p>
+    <span style="font-size: 1.4rem;">Here, the array is declared and initialized with the specified values in one step. This syntax is convenient when the values are known and won't change during the program execution.</span>
+    <p>
+   <p> <br /> </p>
+   <h3><span style="font-weight: 700;">Using the split Method</span>
+   </h3>
+   <p>
+   <p>
+     <span style="font-size: 1.4rem;">The <span style="font-size: 1.4rem; background-color: black; color: white;"><code>split</code></span> method is a useful feature in Java for breaking a string into an array of substrings based on a specified delimiter. This is particularly handy when working with data in a delimited format, such as CSV (Comma-Separated Values) or space-separated values. Here's a simple example:</span>
+   <p>
+    <div class="field box" id="output"><pre style="color:#fff;background-color:#111;"><code><span style="display:flex;"><span><span style="color:#fb660a;font-weight:bold">public</span> <span style="color:#fb660a;font-weight:bold">class</span> Main {
+    </span></span><span style="display:flex;"><span>    <span style="color:#fb660a;font-weight:bold">public</span> <span style="color:#fb660a;font-weight:bold">static</span> <span style="color:#cdcaa9;font-weight:bold">void</span> <span style="color:#ff0086;font-weight:bold">main</span>(String[] args) {
+    </span></span><span style="display:flex;"><span>        String date = <span style="color:#0086d2">"28/05/2000"</span>;
+    </span></span><span style="display:flex;"><span>
+    </span></span><span style="display:flex;"><span>        <span style="color:#080;background-color:#0f140f;font-style:italic">// Split the string into an array using a slash as the delimiter
+    </span></span></span><span style="display:flex;"><span><span style="color:#080;background-color:#0f140f;font-style:italic"></span>        String[] part = date.<span style="color:#ff0086;font-weight:bold">split</span>(<span style="color:#0086d2">"/"</span>);
+    </span></span><span style="display:flex;"><span>
+    </span></span><span style="display:flex;"><span>        <span style="color:#080;background-color:#0f140f;font-style:italic">// Access and print each part of the array
+    </span></span></span><span style="display:flex;"><span><span style="color:#080;background-color:#0f140f;font-style:italic"></span>        System.<span style="color:#ff0086;font-weight:bold">out</span>.<span style="color:#ff0086;font-weight:bold">println</span>(part[<span style="color:#0086f7;font-weight:bold">0</span>]); <span style="color:#080;background-color:#0f140f;font-style:italic">// Day
+    </span></span></span><span style="display:flex;"><span><span style="color:#080;background-color:#0f140f;font-style:italic"></span>        System.<span style="color:#ff0086;font-weight:bold">out</span>.<span style="color:#ff0086;font-weight:bold">println</span>(part[<span style="color:#0086f7;font-weight:bold">1</span>]); <span style="color:#080;background-color:#0f140f;font-style:italic">// Month
+    </span></span></span><span style="display:flex;"><span><span style="color:#080;background-color:#0f140f;font-style:italic"></span>        System.<span style="color:#ff0086;font-weight:bold">out</span>.<span style="color:#ff0086;font-weight:bold">println</span>(part[<span style="color:#0086f7;font-weight:bold">2</span>]); <span style="color:#080;background-color:#0f140f;font-style:italic">// Year
+    </span></span></span><span style="display:flex;"><span><span style="color:#080;background-color:#0f140f;font-style:italic"></span>    }
+    </span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+     <p>
+   <span style="font-size: 1.4rem;">In this example, the <span style="font-size: 1.4rem; background-color: black; color: white;"><code>split</code></span> method is applied to the <span style="font-size: 1.4rem; background-color: black; color: white;"><code>date</code></span> string, breaking it into substrings wherever a "/" is encountered. The resulting array, <span style="font-size: 1.4rem; background-color: black; color: white;"><code>part</code></span>, contains each substring representing the day, month, and year components of the date. The code then prints each component to the console.</span>
+     <p>
+    <span style="font-size: 1.4rem;">Feel free to experiment with different delimiters based on your specific use case. The <span style="font-size: 1.4rem; background-color: black; color: white;"><code>split</code></span> method is versatile and can be adapted to various scenarios where string parsing is required.</span>
+    <p>
+  <p> <br /> </p>
+    <h3 style="text-align: left;">
+      <span style="font-weight: 700;">Conclusion</span>
+    </h3>
+    <p>
+      <span style="font-size: 1.4rem;">Arrays serve as essential tools for organizing and manipulating data in your code. As you continue your coding journey, mastering the use of arrays will elevate your programming skills, enabling you to craft more sophisticated programs.</span>
+    <p>
+    </p>
+    <p> <br /> </p>
+    <div class="nextprev" style="clear:both; text-align: center;">
+      <a class="left" href="../QA/java_statements.html" style="float: left;">❮ Previous</a>
+      <a class="right" href="../QA/java_collections.html" style="float: right;">Next ❯</a>
+  </div>  
+    <p></p>     
+  </section>
+  <section class="u-clearfix u-palette-1-light-3 u-section-3" id="sec-27c2">
+    <div class="u-clearfix u-sheet u-sheet-1"></div>
+  </section>
+
+  <footer class="u-align-center u-clearfix u-footer u-white u-footer" id="sec-9996">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+      <p class="u-small-text u-text u-text-variant u-text-1">
+      Made with 💙&nbsp;by
+        <a href="https://www.linkedin.com/in/nehorayshimoni/" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" target="_blank">Nehoray Shimoni</a>&nbsp;
+      </p>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

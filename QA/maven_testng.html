@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="keywords" content="Post 1 Headline">
+  <meta name="description" content="">
+  <title>Maven and TestNG</title>
+  <link rel="stylesheet" href="../nicepage.css" media="screen">
+  <link rel="stylesheet" href="../Post-Template.css" media="screen">
+  <link rel="shortcut icon" href="../images/favicon2.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="about.css">
+  <script class="u-script" type="text/javascript" src="../jquery.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="../nicepage.js" defer=""></script>
+  <meta name="generator" content="Nicepage 5.13.1, nicepage.com">
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+
+
+
+
+  <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+  <meta name="theme-color" content="#478ac9">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/">
+</head>
+
+<body class="u-body u-palette-1-base u-xl-mode" data-lang="en">
+  <header class="u-box-shadow u-clearfix u-header u-white u-header" id="sec-6e12">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <h3 class="u-text u-text-custom-color-1 u-text-default u-text-1">
+        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1"
+          href="../index.html">Nehoray</a>
+      </h3>
+      <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+        <div class="menu-collapse"
+          style="font-size: 1rem; letter-spacing: 0px; text-transform: uppercase; font-weight: 700;">
+          <a class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-decoration u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+            href="#">
+            <svg class="u-svg-link" viewBox="0 0 24 24">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
+            </svg>
+            <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px"
+              xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+              <g>
+                <rect y="1" width="16" height="2"></rect>
+                <rect y="7" width="16" height="2"></rect>
+                <rect y="13" width="16" height="2"></rect>
+              </g>
+            </svg>
+          </a>
+        </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-spacing-30 u-unstyled u-nav-1">
+              <li class="u-nav-item">
+                <a class="u-border-5 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="../index.html" style="padding: 10px 12px;">Home</a>
+              </li>
+              <li class="u-nav-item">
+                <a class="u-border-5 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="../QA/Course.html" rel="nofollow" style="padding: 10px 12px;">QA Course - Free</a>
+              </li>
+            </ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+               <ul class="u-nav u-popupmenu-items u-unstyled u-nav-2" style="margin-left: 20px;"> <li class="u-nav-item"><a class="u-button-style u-nav-link" href="../index.html">Home</a>
+                  </li><li class="u-nav-item"></li>
+                <ul class="u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link active" href="../QA/Course.html">QA Course - Free</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <section class="u-align-center u-clearfix u-palette-1-light-3 u-section-1" id="sec-bdf0">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <!--post_details--><!--post_details_options_json--><!--{"source":""}--><!--/post_details_options_json--><!--blog_post-->
+      <div class="u-container-style u-expanded-width u-post-details u-post-details-1">
+        <div class="u-container-layout u-container-layout-1"><!--blog_post_image-->
+          <img alt="" class="u-blog-control u-expanded-width u-image u-image-round u-radius-25 u-image-1"
+            src="../images/maven_testng.png"><!--/blog_post_image--><!--blog_post_header-->
+          <h2 class="u-align-center u-blog-control u-text u-text-1">Maven and TestNG</h2>
+          <!--/blog_post_header--><!--blog_post_content-->
+ <div class="fr-view u-clearfix u-rich-text u-text u-text-2">
+      <p> <br> </p>
+              <p id="isPasted">
+                <span style="font-size: 1.875rem;">
+                  <span style="font-size: 1.5rem;">
+                    <span style="font-size: 1rem;">
+                      <span style="font-size: 1.25rem;">
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </p>
+	            <p>
+              <p>
+                <span style="font-size: 1.4rem;">In the realm of software testing and quality assurance automation (QA), having the right tools is crucial to ensure the reliability and efficiency of software products. Maven and TestNG are two such tools that play significant roles in the development and testing processes, offering a systematic approach to managing dependencies and executing tests. In this article, we'll provide an accessible introduction to Maven and TestNG frameworks, highlighting their importance and basic functionalities for QA automation professionals.</span>
+              </p>
+             <p> <br /> </p>
+        <h3 style="text-align: left;">
+              <span style="font-weight: 700;">What is Managing Dependencies and Executing Tests?</span>
+            </h3>
+            <p>
+            <p>
+            <span style="font-size: 1.4rem;">Managing dependencies involves handling external libraries and modules that your project relies on. In software development, projects often depend on various libraries and frameworks to function properly. Maven simplifies this process by automatically resolving and downloading dependencies from remote repositories, ensuring that the required components are available during the build process. This not only saves time but also minimizes the risk of compatibility issues between different versions of dependencies.</span>
+            <p>
+            <span style="font-size: 1.4rem;">Executing tests refers to the process of running predefined test cases to verify the functionality and behavior of a software application. TestNG, on the other hand, provides a structured framework for organizing and executing tests, offering features like annotations, parameterization, and test dependency management. With TestNG, QA automation professionals can define test scenarios, specify test data, and control the execution flow, allowing for comprehensive and efficient testing of software systems.</span>
+            <p>
+            <span style="font-size: 1.4rem;">By combining the dependency management capabilities of Maven with the test execution framework provided by TestNG, QA automation teams can effectively streamline their testing processes.</span>
+            </p>
+           <p> <br /> </p>
+           <h3 style="text-align: left;">
+            <span style="font-weight: 700;">Understanding Maven</span>
+          </h3>
+          <p>
+          <p>
+          <span style="font-size: 1.4rem;">Maven is a powerful build automation tool primarily used for Java projects. It simplifies the process of managing project dependencies, building, and documenting software projects. Maven follows a convention-over-configuration approach, which means it provides default configurations for projects, reducing the need for manual setup and configuration. Fortunately, Maven is supported within IntelliJ IDEA (our primary IDE), so we don't have to manually install Meavn on our system.</span>
+          <p>
+         <p> <br /> </p>
+      <h3 style="text-align: left;">
+        <span style="font-weight: 700;">Key Features of Maven</span>
+      </h3>
+      <p>
+      <span style="font-size: 1.4rem;"><b>Dependency Management:</b> Maven manages project dependencies efficiently by automatically downloading required libraries from central repositories.</span>
+      <p>
+      <span style="font-size: 1.4rem;"><b>Project Structuring:</b> It enforces a standardized project structure, making it easier for developers and QA automation professionals to navigate through projects.</span>
+      <p>
+      <span style="font-size: 1.4rem;"><b>Build Automation:</b> Maven automates the build process, including compilation, testing, packaging, and deployment, ensuring consistency and reliability across different environments.</span>
+      <p>
+      <span style="font-size: 1.4rem;"><b>Plugin System:</b> Maven's extensive plugin ecosystem allows integration with various tools and frameworks, enhancing its functionality.</span>
+      </p>
+      <p> <br /> </p>
+      <h3 style="text-align: left;">
+        <span style="font-weight: 700;">Introduction to TestNG</span>
+      </h3>
+      <p>
+      <span style="font-size: 1.4rem;">TestNG is a testing framework inspired by JUnit and NUnit but introduces several new features and functionalities. It supports various testing types, including unit, functional, and integration testing, and provides annotations to define test methods and their execution order. TestNG promotes a flexible and comprehensive approach to testing, making it a preferred choice for QA automation professionals.</span>
+      <p>
+      <p> <br /> </p>
+      <h3 style="text-align: left;">
+        <span style="font-weight: 700;">Key Features of TestNG</span>
+      </h3>
+      <p>
+      <span style="font-size: 1.4rem;"><b>Annotations:</b> TestNG offers a wide range of annotations such as @Test, @BeforeSuite, @AfterClass, etc., allowing precise control over test execution flow and setup/teardown operations.</span>
+      <p>
+      <span style="font-size: 1.4rem;"><b>Parameterization:</b> It supports parameterized testing, enabling the execution of the same test method with different input values.</span>
+      <p>
+      <span style="font-size: 1.4rem;"><b>Dependency Management:</b> TestNG allows defining dependencies between test methods, ensuring they execute in the specified order.</span>
+      <p>
+      <span style="font-size: 1.4rem;"><b>Reporting:</b> TestNG generates detailed test reports, including information about test results, execution time, and error traces, facilitating result analysis and debugging.</span>
+      </p>
+      <p> <br /> </p>
+	      <h3 style="text-align: left;">
+                <span style="font-weight: 700;">Conclusion</span>
+              </h3>
+	       <p>
+                <span style="font-size: 1.4rem;">In conclusion, Maven and TestNG are indispensable tools for QA automation professionals involved in Java-based software testing. Maven simplifies project management and build automation, while TestNG provides a robust framework for designing and executing tests. By leveraging the capabilities of Maven and TestNG, QA automation teams can streamline their testing processes, improve test coverage, and ensure the delivery of high-quality software products.</span>
+    <p>
+    </p>
+    <p> <br /> </p>
+    <div class="nextprev" style="clear:both; text-align: center;">
+      <a class="left" href="../QA/XML_and_JSON.html" style="float: left;">❮ Previous</a>
+      <a class="right" href="../QA/selenium.html" style="float: right;">Next ❯</a>
+  </div>  
+    <p></p>     
+  </section>
+  <section class="u-clearfix u-palette-1-light-3 u-section-3" id="sec-27c2">
+    <div class="u-clearfix u-sheet u-sheet-1"></div>
+  </section>
+
+  <footer class="u-align-center u-clearfix u-footer u-white u-footer" id="sec-9996">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+      <p class="u-small-text u-text u-text-variant u-text-1">
+      Made with 💙&nbsp;by
+        <a href="https://www.linkedin.com/in/nehorayshimoni/" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" target="_blank">Nehoray Shimoni</a>&nbsp;
+      </p>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
