@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="keywords" content="Post 1 Headline">
+  <meta name="description" content="">
+  <title>WebDriver Cheat Sheet</title>
+  <link rel="stylesheet" href="../nicepage.css" media="screen">
+  <link rel="stylesheet" href="../Post-Template.css" media="screen">
+  <link rel="shortcut icon" href="../images/favicon2.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="about.css">
+  <script class="u-script" type="text/javascript" src="../jquery.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="../nicepage.js" defer=""></script>
+  <meta name="generator" content="Nicepage 5.13.1, nicepage.com">
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+
+
+
+
+  <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+  <meta name="theme-color" content="#478ac9">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/">
+</head>
+
+<body class="u-body u-palette-1-base u-xl-mode" data-lang="en">
+  <header class="u-box-shadow u-clearfix u-header u-white u-header" id="sec-6e12">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <h3 class="u-text u-text-custom-color-1 u-text-default u-text-1">
+        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1"
+          href="../index.html">Nehoray</a>
+      </h3>
+      <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+        <div class="menu-collapse"
+          style="font-size: 1rem; letter-spacing: 0px; text-transform: uppercase; font-weight: 700;">
+          <a class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-decoration u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+            href="#">
+            <svg class="u-svg-link" viewBox="0 0 24 24">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
+            </svg>
+            <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px"
+              xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+              <g>
+                <rect y="1" width="16" height="2"></rect>
+                <rect y="7" width="16" height="2"></rect>
+                <rect y="13" width="16" height="2"></rect>
+              </g>
+            </svg>
+          </a>
+        </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-spacing-30 u-unstyled u-nav-1">
+              <li class="u-nav-item">
+                <a class="u-border-5 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="../index.html" style="padding: 10px 12px;">Home</a>
+              </li>
+              <li class="u-nav-item">
+                <a class="u-border-5 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="../QA/Course.html" rel="nofollow" style="padding: 10px 12px;">QA Course - Free</a>
+              </li>
+            </ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+               <ul class="u-nav u-popupmenu-items u-unstyled u-nav-2" style="margin-left: 20px;"> <li class="u-nav-item"><a class="u-button-style u-nav-link" href="../index.html">Home</a>
+                  </li><li class="u-nav-item"></li>
+                <ul class="u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link active" href="../QA/Course.html">QA Course - Free</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <section class="u-align-center u-clearfix u-palette-1-light-3 u-section-1" id="sec-bdf0">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <!--post_details--><!--post_details_options_json--><!--{"source":""}--><!--/post_details_options_json--><!--blog_post-->
+      <div class="u-container-style u-expanded-width u-post-details u-post-details-1">
+        <div class="u-container-layout u-container-layout-1"><!--blog_post_image-->
+          <img alt="" class="u-blog-control u-expanded-width u-image u-image-round u-radius-25 u-image-1"
+            src="../images/webdriver_cheat_sheet.png"><!--/blog_post_image--><!--blog_post_header-->
+          <h2 class="u-align-center u-blog-control u-text u-text-1">WebDriver Cheat Sheet</h2>
+          <!--/blog_post_header--><!--blog_post_content-->
+ <div class="fr-view u-clearfix u-rich-text u-text u-text-2">
+      <p> <br> </p>
+              <p id="isPasted">
+                <span style="font-size: 1.875rem;">
+                  <span style="font-size: 1.5rem;">
+                    <span style="font-size: 1rem;">
+                      <span style="font-size: 1.25rem;">
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </p>
+	            <p>
+              <p>
+                <span style="font-size: 1.4rem;">After understanding selenium better, we can learn new WebDriver commands to create more advanced projects. I want you to look at the cheat sheet and create your own automation, feel free to play with the commands. You can put WebDriver commands on @BeforeTest, @Test, and @AfterTest to craft your desired task.</span>
+            <p>
+              <span style="font-size: 1.4rem;">Here is the cheat sheet:</span>
+            </p>
+           <p> <br /> </p>
+      <h3 style="text-align: left;">
+        <span style="font-weight: 700;">1. Basic Setup & Initialization</span>
+      </h3>
+      <p>
+        <ul>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>WebDriver driver = new ChromeDriver();</code></span> - Initializes a new Chrome WebDriver.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>WebDriver driver = new FirefoxDriver();</code></span> - Initializes a new Firefox WebDriver.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>WebDriver driver = new EdgeDriver();</code></span> - Initializes a new Edge WebDriver.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>WebDriver driver = new SafariDriver();</code></span> - Initializes a new Safari WebDriver.</li>
+        </ul>    
+      <p>
+      <p> <br /> </p>
+      <h3 style="text-align: left;">
+        <span style="font-weight: 700;">2. Navigating Web Pages</span>
+      </h3>
+      <p>
+        <ul>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.get(url);</code></span> - Opens the given URL in the browser.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.navigate().to(url);</code></span> - Navigates to a specified URL.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.navigate().back();</code></span> - Navigates back in the browser history.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.navigate().forward();</code></span> - Navigates forward in the browser history.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.navigate().refresh();</code></span> - Refreshes the current page.</li>
+        </ul>   
+      <p>
+      <p> <br /> </p>
+      <h3 style="text-align: left;">
+        <span style="font-weight: 700;">3. Browser Info</span>
+      </h3>
+      <p>
+        <ul>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.getTitle();</code></span> - Gets the title of the current page.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.getCurrentUrl();</code></span> - Gets the current URL.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.getPageSource();</code></span> - Gets the page source (HTML) of the current page.</li>
+        </ul>   
+      <p>
+      <p> <br /> </p>
+      <h3 style="text-align: left;">
+        <span style="font-weight: 700;">4. Locating Elements</span>
+      </h3>
+      <p>
+        <span style="font-size: 1.4rem;">To check the properties of an element, open the browser's developer tools (often called 'Inspect Element')</span>
+      <p>
+        <ul>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.findElement(By.id("elementId"));</code></span> - Finds an element by its ID.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.findElement(By.name("elementName"));</code></span> - Finds an element by its name.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.findElement(By.className("className"));</code></span> - Finds an element by its class name.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.findElement(By.tagName("tagName"));</code></span> - Finds an element by its tag name.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.findElement(By.linkText("linkText"));</code></span> - Finds an element by its link text.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.findElement(By.partialLinkText("partialLinkText"));</code></span> - Finds an element by partial link text.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.findElement(By.xpath("xpath"));</code></span> - Finds an element using XPath.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.findElement(By.cssSelector("cssSelector"));</code></span> - Finds an element using CSS selector.</li>
+        </ul>   
+      <p>
+      <p> <br /> </p>
+      <h3 style="text-align: left;">
+        <span style="font-weight: 700;">5. Web Element Actions</span>
+      </h3>
+      <p>
+        <ul>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>element.click();</code></span> - Clicks the element.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>element.sendKeys("text");</code></span> - Types text into the element (e.g., in a text box).</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>element.clear();</code></span> - Clears the input field.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>element.submit();</code></span> - Submits a form.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>element.getText();</code></span> - Gets the visible text of the element.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>element.getAttribute("attributeName");</code></span> - Gets the value of a specific attribute.</li>
+        </ul>   
+      <p>
+      <p> <br /> </p>
+      <h3 style="text-align: left;">
+        <span style="font-weight: 700;">6. Handling Alerts</span>
+      </h3>
+      <p>
+        <ul>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>Alert alert = driver.switchTo().alert();</code></span> - Switches to the alert.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>alert.accept();</code></span> - Accepts the alert (clicks OK).</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>alert.dismiss();</code></span> - Dismisses the alert (clicks Cancel).</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>alert.getText();</code></span> - Gets the text from the alert.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>alert.sendKeys("text");</code></span> - Sends text to the alert (useful for prompts).</li>
+        </ul>   
+      <p>
+      <p> <br /> </p>
+      <h3 style="text-align: left;">
+        <span style="font-weight: 700;">7. Handling Windows & Frames</span>
+      </h3>
+      <p>
+        <ul>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.switchTo().frame(frameIndex);</code></span> - Switches to the alert.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.switchTo().frame("frameName");</code></span> - Accepts the alert (clicks OK).</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.switchTo().frame(WebElement frameElement);</code></span> - Dismisses the alert (clicks Cancel).</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.switchTo().defaultContent();</code></span> - Gets the text from the alert.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.switchTo().window(windowHandle);</code></span> - Sends text to the alert (useful for prompts).</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>String currentWindow = driver.getWindowHandle();</code></span> - Gets the current window handle.</li>
+        </ul>   
+      <p>
+      <p> <br /> </p>
+      <h3 style="text-align: left;">
+        <span style="font-weight: 700;">8. Browser Window Size & Position</span>
+      </h3>
+      <p>
+        <ul>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.manage().window().maximize();</code></span> - Maximizes the browser window.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.manage().window().minimize();</code></span> - Minimizes the browser window.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.manage().window().setSize(new Dimension(width, height));</code></span> - Sets the browser window size.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.manage().window().getSize();</code></span> - Gets the current window size.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.manage().window().setPosition(new Point(x, y));</code></span> - Sets the position of the window.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.manage().window().getPosition();</code></span> - Gets the current position of the window.</li>
+        </ul>   
+      <p>
+      <p> <br /> </p>
+      <h3 style="text-align: left;">
+        <span style="font-weight: 700;">9. Timeouts</span>
+      </h3>
+      <p>
+        <ul>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(seconds));</code></span> - Sets the implicit wait time.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(seconds));</code></span> - Sets the page load timeout.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>ddriver.manage().timeouts().scriptTimeout(Duration.ofSeconds(seconds));</code></span> - Sets the script timeout for JavaScript.</li>
+        </ul>   
+      <p>
+      <p> <br /> </p>
+      <h3 style="text-align: left;">
+        <span style="font-weight: 700;">10. Cookies Management</span>
+      </h3>
+      <p>
+        <ul>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.manage().getCookies();</code></span> - Gets all cookies for the current domain.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.manage().getCookieNamed("cookieName");</code></span> - Gets a specific cookie by name.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.manage().addCookie(new Cookie("name", "value"));</code></span> - Adds a new cookie.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.manage().deleteCookieNamed("cookieName");</code></span> - Deletes a specific cookie by name.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.manage().deleteAllCookies();</code></span> - Deletes all cookies for the current domain.</li>
+        </ul>   
+      <p>
+      <p> <br /> </p>
+      <h3 style="text-align: left;">
+        <span style="font-weight: 700;">11. Taking Screenshots</span>
+      </h3>
+      <p>
+        <ul>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>TakesScreenshot screenshot = (TakesScreenshot) driver;</code></span> - Casts WebDriver to <span style="font-size: 1.4rem; background-color: black; color: white;"><code>TakesScreenshot</code></span>.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>File screenshotFile = screenshot.getScreenshotAs(OutputType.FILE);</code></span> - Captures a screenshot and stores it as a file.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>FileUtils.copyFile(screenshotFile, new File("path/to/save.png"));</code></span> - Saves the screenshot to a specific location.</li>
+        </ul>   
+      <p>
+      <p> <br /> </p>
+      <h3 style="text-align: left;">
+        <span style="font-weight: 700;">12. JavaScript Execution:</span>
+      </h3>
+      <p>
+        <ul>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>JavascriptExecutor js = (JavascriptExecutor) driver;</code></span> - Casts WebDriver to <span style="font-size: 1.4rem; background-color: black; color: white;"><code>JavascriptExecutor</code></span>.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>js.executeScript("script");</code></span> - Executes a JavaScript script.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>js.executeScript("arguments[0].click();", element);</code></span> - Executes JavaScript on an element (e.g., click).</li>
+        </ul>   
+      <p>
+      <p> <br /> </p>
+      <h3 style="text-align: left;">
+        <span style="font-weight: 700;">13. Actions (Mouse and Keyboard)</span>
+      </h3>
+      <p>
+        <ul>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>Actions actions = new Actions(driver);</code></span> - Initializes the Actions class for advanced interactions.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>actions.moveToElement(element).perform();</code></span> - Moves the mouse to the specified element.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>actions.click().perform();</code></span> - Performs a click.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>actions.clickAndHold().moveToElement(element).release().perform();</code></span> - Drags and drops an element.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>actions.sendKeys(Keys.ENTER).perform();</code></span> - Sends the Enter key.</li>
+        </ul>   
+      <p>
+      <p> <br /> </p>
+      <h3 style="text-align: left;">
+        <span style="font-weight: 700;">14. WebDriver Waits</span>
+      </h3>
+      <p>
+        <ul>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));</code></span> - Waits for a condition.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>wait.until(ExpectedConditions.visibilityOf(element));</code></span> - Waits until an element is visible.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>wait.until(ExpectedConditions.elementToBeClickable(element));</code></span> - Waits until an element is clickable.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>wait.until(ExpectedConditions.presenceOfElementLocated(By.id("id")));</code></span> - Waits until an element is present.</li>
+        </ul>   
+      <p>
+      <p> <br /> </p>
+      <h3 style="text-align: left;">
+        <span style="font-weight: 700;">15. Element Visibility</span>
+      </h3>
+      <p>
+        <ul>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>element.isDisplayed();</code></span> - Checks if the element is visible.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>element.isEnabled();</code></span> - Checks if the element is enabled.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>element.isSelected();</code></span> - Checks if the element is selected (checkbox/radio button).</li>
+        </ul>   
+      <p>
+      <p> <br /> </p>
+      <h3 style="text-align: left;">
+        <span style="font-weight: 700;">16. Miscellaneous</span>
+      </h3>
+      <p>
+        <ul>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.quit();</code></span> - Quits the driver and closes all associated windows.</li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.close();</code></span> - Closes the current browser window.</li>
+        </ul>   
+      <p> 
+    <p> <br /> </p>
+    <div class="nextprev" style="clear:both; text-align: center;">
+      <a class="left" href="../QA/first_test_automation.html" style="float: left;">❮ Previous</a>
+      <a class="right" href="../QA/Course.html" style="float: right;">Next ❯</a>
+  </div>  
+    <p></p>     
+  </section>
+  <section class="u-clearfix u-palette-1-light-3 u-section-3" id="sec-27c2">
+    <div class="u-clearfix u-sheet u-sheet-1"></div>
+  </section>
+
+  <footer class="u-align-center u-clearfix u-footer u-white u-footer" id="sec-9996">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+      <p class="u-small-text u-text u-text-variant u-text-1">
+      Made with 💙&nbsp;by
+        <a href="https://www.linkedin.com/in/nehorayshimoni/" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" target="_blank">Nehoray Shimoni</a>&nbsp;
+      </p>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
