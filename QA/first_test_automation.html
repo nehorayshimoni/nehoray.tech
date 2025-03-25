@@ -140,15 +140,22 @@
       </h3>
       <p>
         <div class="field box" id="output"><pre style="color:#fff;background-color:#111;"><code><span style="display:flex;"><span><span style="color:#fb660a;font-weight:bold">import</span><span style="color:#888"> </span>io.github.bonigarcia.wdm.WebDriverManager;<span style="color:#888">
+        </span></span></span><span style="display:flex;"><span><span style="color:#888"></span><span style="color:#fb660a;font-weight:bold">import</span><span style="color:#888"> </span>org.openqa.selenium.By;<span style="color:#888">
+        </span></span></span><span style="display:flex;"><span><span style="color:#888"></span><span style="color:#fb660a;font-weight:bold">import</span><span style="color:#888"> </span>org.openqa.selenium.Keys;<span style="color:#888">
         </span></span></span><span style="display:flex;"><span><span style="color:#888"></span><span style="color:#fb660a;font-weight:bold">import</span><span style="color:#888"> </span>org.openqa.selenium.WebDriver;<span style="color:#888">
+        </span></span></span><span style="display:flex;"><span><span style="color:#888"></span><span style="color:#fb660a;font-weight:bold">import</span><span style="color:#888"> </span>org.openqa.selenium.WebElement;<span style="color:#888">
         </span></span></span><span style="display:flex;"><span><span style="color:#888"></span><span style="color:#fb660a;font-weight:bold">import</span><span style="color:#888"> </span>org.openqa.selenium.edge.EdgeDriver;<span style="color:#888">
+        </span></span></span><span style="display:flex;"><span><span style="color:#888"></span><span style="color:#fb660a;font-weight:bold">import</span><span style="color:#888"> </span>org.openqa.selenium.support.ui.ExpectedConditions;<span style="color:#888">
+        </span></span></span><span style="display:flex;"><span><span style="color:#888"></span><span style="color:#fb660a;font-weight:bold">import</span><span style="color:#888"> </span>org.openqa.selenium.support.ui.WebDriverWait;<span style="color:#888">
         </span></span></span><span style="display:flex;"><span><span style="color:#888"></span><span style="color:#fb660a;font-weight:bold">import</span><span style="color:#888"> </span>org.testng.annotations.AfterTest;<span style="color:#888">
         </span></span></span><span style="display:flex;"><span><span style="color:#888"></span><span style="color:#fb660a;font-weight:bold">import</span><span style="color:#888"> </span>org.testng.annotations.BeforeTest;<span style="color:#888">
-        </span></span></span><span style="display:flex;"><span><span style="color:#888"></span><span style="color:#fb660a;font-weight:bold">import</span><span style="color:#888"> </span>org.testng.annotations.Test;</span></span></code></pre></div>      
+        </span></span></span><span style="display:flex;"><span><span style="color:#888"></span><span style="color:#fb660a;font-weight:bold">import</span><span style="color:#888"> </span>org.testng.annotations.Test;</span></span></code></pre></div>
       <p>
         <ul>
           <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>WebDriverManager</code></span>: Handles downloading the necessary WebDriver for the browser.</span></li>
           <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>WebDriver</code></span> and <span style="font-size: 1.4rem; background-color: black; color: white;"><code>EdgeDriver</code></span>: For controlling the Edge browser.</span></li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>By, Keys, WebElement</code></span>: For controlling the Edge browser.</span></li>
+          <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>WebDriverWait, ExpectedConditions</code></span>: Used for waiting until certain conditions are met.</span></li>
           <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>@BeforeTest</code></span>, <span style="font-size: 1.4rem; background-color: black; color: white;"><code>@Test</code></span> and <span style="font-size: 1.4rem; background-color: black; color: white;"><code>@AfterTest</code></span>: Annotations from TestNG to specify when certain methods should run.</span></li>
         </ul>     
       </p>
@@ -163,12 +170,12 @@
      <p>
       <ul>
         <li><span style="font-size: 1.4rem;">Defines the class TestClass.</span></li>
-        <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver</code></span>: Declares a variable of type WebDriver which will control the browser.</li>
+        <li><span style="font-size: 1.4rem;">Declares a <span style="font-size: 1.4rem; background-color: black; color: white;"><code>WebDriver</code></span> instance to control the browser.</li>
       </ul>     
       </p>
       <p> <br /> </p>
       <h3 style="text-align: left;">
-        <span style="font-weight: 700;">3. BeforeTest - Set Up Browser</span>
+        <span style="font-weight: 700;">3. BeforeTest - Open eBay</span>
       </h3>
      </p>
      <div class="field box" id="output"><pre style="color:#fff;background-color:#111;"><code><span style="display:flex;"><span>@BeforeTest<span style="color:#888">
@@ -176,35 +183,62 @@
     </span></span></span><span style="display:flex;"><span><span style="color:#888">    </span>WebDriverManager.<span style="color:#ff0086;font-weight:bold">edgedriver</span>().<span style="color:#ff0086;font-weight:bold">setup</span>();<span style="color:#888">
     </span></span></span><span style="display:flex;"><span><span style="color:#888">    </span>driver<span style="color:#888"> </span>=<span style="color:#888"> </span><span style="color:#fb660a;font-weight:bold">new</span><span style="color:#888"> </span>EdgeDriver();<span style="color:#888">
     </span></span></span><span style="display:flex;"><span><span style="color:#888">    </span>driver.<span style="color:#ff0086;font-weight:bold">manage</span>().<span style="color:#ff0086;font-weight:bold">window</span>().<span style="color:#ff0086;font-weight:bold">maximize</span>();<span style="color:#888">
-    </span></span></span><span style="display:flex;"><span><span style="color:#888">    </span>driver.<span style="color:#ff0086;font-weight:bold">get</span>(<span style="color:#0086d2">"https://www.google.com"</span>);<span style="color:#888">
-    </span></span></span><span style="display:flex;"><span><span style="color:#888"></span>}</span></span></code></pre></div>    
+    </span></span></span><span style="display:flex;"><span><span style="color:#888">    </span>driver.<span style="color:#ff0086;font-weight:bold">get</span>(<span style="color:#0086d2">"https://www.ebay.com/"</span>);<span style="color:#888">
+    </span></span></span><span style="display:flex;"><span><span style="color:#888"></span>}</span></span></code></pre></div>
      <p>
       <ul>
         <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>@BeforeTest</code></span>: Tells TestNG to run this method before any tests.</li>
         <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>WebDriverManager.edgedriver().setup()</code></span>: Ensures the correct version of the Edge WebDriver is downloaded and ready.</span></li>
         <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver = new EdgeDriver()</code></span>: Creates a new instance of the Edge browser.</li>
         <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.manage().window().maximize()</code></span>: Maximizes the browser window.</li>
-        <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.get("https://www.google.com")</code></span>: Opens Google in the browser.</li>
+        <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>driver.get("https://www.ebay.com/")</code></span>: Navigates to eBay’s homepage.</li>
       </ul>     
       </p>
       <p> <br /> </p>
       <h3 style="text-align: left;">
-        <span style="font-weight: 700;">4. Test Method</span>
+        <span style="font-weight: 700;">4. Test 1 - Get Page Title</span>
       </h3>
      </p>
      <div class="field box" id="output"><pre style="color:#fff;background-color:#111;"><code><span style="display:flex;"><span>@Test<span style="color:#888">
-    </span></span></span><span style="display:flex;"><span><span style="color:#888"></span><span style="color:#fb660a;font-weight:bold">public</span><span style="color:#888"> </span><span style="color:#cdcaa9;font-weight:bold">void</span><span style="color:#888"> </span><span style="color:#ff0086;font-weight:bold">openGoogle</span>()<span style="color:#888"> </span>{<span style="color:#888">
+    </span></span></span><span style="display:flex;"><span><span style="color:#888"></span><span style="color:#fb660a;font-weight:bold">public</span><span style="color:#888"> </span><span style="color:#cdcaa9;font-weight:bold">void</span><span style="color:#888"> </span><span style="color:#ff0086;font-weight:bold">getTitle</span>()<span style="color:#888"> </span>{<span style="color:#888">
     </span></span></span><span style="display:flex;"><span><span style="color:#888">    </span>System.<span style="color:#ff0086;font-weight:bold">out</span>.<span style="color:#ff0086;font-weight:bold">println</span>(<span style="color:#0086d2">"Title: "</span><span style="color:#888"> </span>+<span style="color:#888"> </span>driver.<span style="color:#ff0086;font-weight:bold">getTitle</span>());<span style="color:#888">
-    </span></span></span><span style="display:flex;"><span><span style="color:#888"></span>}</span></span></code></pre></div>
+    </span></span></span><span style="display:flex;"><span><span style="color:#888"></span>}<span style="color:#888">
+    </span></span></span></code></pre></div>
      <p>
       <ul>
         <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>@Test</code></span>: Marks this method as a test that TestNG should run.</li>
-        <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>System.out.println("Title: " + driver.getTitle())</code></span>: Prints the title of the Google webpage in the console.</span></li>
+        <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>System.out.println("Title: " + driver.getTitle())</code></span>: Prints the title of the Ebay homepage in the console.</span></li>
       </ul>     
       </p>
       <p> <br /> </p>
       <h3 style="text-align: left;">
-        <span style="font-weight: 700;">5. AfterTest - Clean Up</span>
+        <span style="font-weight: 700;">5. Test 2 - Perform Search on eBay</span>
+      </h3>
+     </p>
+     <div class="field box" id="output"><pre style="color:#fff;background-color:#111;"><code><span style="display:flex;"><span>@Test<span style="color:#888">
+    </span></span></span><span style="display:flex;"><span><span style="color:#888"></span><span style="color:#fb660a;font-weight:bold">public</span><span style="color:#888"> </span><span style="color:#cdcaa9;font-weight:bold">void</span><span style="color:#888"> </span><span style="color:#ff0086;font-weight:bold">performSearch</span>()<span style="color:#888"> </span>{<span style="color:#888">
+    </span></span></span><span style="display:flex;"><span><span style="color:#888">    </span>WebElement<span style="color:#888"> </span>searchEbay<span style="color:#888"> </span>=<span style="color:#888"> </span>driver.<span style="color:#ff0086;font-weight:bold">findElement</span>(By.<span style="color:#ff0086;font-weight:bold">name</span>(<span style="color:#0086d2">"_nkw"</span>));<span style="color:#888">
+    </span></span></span><span style="display:flex;"><span><span style="color:#888">    </span>searchEbay.<span style="color:#ff0086;font-weight:bold">sendKeys</span>(<span style="color:#0086d2">"test search bar"</span>);<span style="color:#888">
+    </span></span></span><span style="display:flex;"><span><span style="color:#888">    </span>searchEbay.<span style="color:#ff0086;font-weight:bold">sendKeys</span>(Keys.<span style="color:#ff0086;font-weight:bold">ENTER</span>);<span style="color:#888">
+    </span></span></span><span style="display:flex;"><span><span style="color:#888">
+    </span></span></span><span style="display:flex;"><span><span style="color:#888">    </span>WebDriverWait<span style="color:#888"> </span>wait<span style="color:#888"> </span>=<span style="color:#888"> </span><span style="color:#fb660a;font-weight:bold">new</span><span style="color:#888"> </span>WebDriverWait(driver,<span style="color:#888"> </span>5);<span style="color:#888">
+    </span></span></span><span style="display:flex;"><span><span style="color:#888">    </span>wait.<span style="color:#ff0086;font-weight:bold">until</span>(ExpectedConditions.<span style="color:#ff0086;font-weight:bold">presenceOfElementLocated</span>(By.<span style="color:#ff0086;font-weight:bold">cssSelector</span>(<span style="color:#0086d2">".srp-results"</span>)));<span style="color:#888">
+    </span></span></span><span style="display:flex;"><span><span style="color:#888">
+    </span></span></span><span style="display:flex;"><span><span style="color:#888">    </span>System.<span style="color:#ff0086;font-weight:bold">out</span>.<span style="color:#ff0086;font-weight:bold">println</span>(<span style="color:#0086d2">"New Title: "</span><span style="color:#888"> </span>+<span style="color:#888"> </span>driver.<span style="color:#ff0086;font-weight:bold">getTitle</span>());<span style="color:#888">
+    </span></span></span><span style="display:flex;"><span><span style="color:#888"></span>}<span style="color:#888">
+    </span></span></span></code></pre></div>
+     <p>
+      <ul>
+        <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>WebElement searchEbay = driver.findElement(By.name("_nkw"));</code></span>: Finds the search box.</li>
+        <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>searchEbay.sendKeys("test search bar");</code></span>: FTypes in "test search bar".</li>
+        <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>searchEbay.sendKeys(Keys.ENTER);</code></span>: Presses Enter to submit the search.</li>
+        <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".srp-results")));</code></span>: Waits until the search results (''.srp-results') appear. if it will not appear after the duration we command it will fail the test (we set it to be 5 seconds).</li>
+        <li><span style="font-size: 1.4rem;"><span style="font-size: 1.4rem; background-color: black; color: white;"><code>System.out.println("New Title: " + driver.getTitle());</code></span>: Prints the new page title, which should reflect the search results.</li>
+      </ul>     
+      </p>
+      <p> <br /> </p>
+      <h3 style="text-align: left;">
+        <span style="font-weight: 700;">6. AfterTest - Close Browser</span>
       </h3>
      </p>
      <div class="field box" id="output"><pre style="color:#fff;background-color:#111;"><code><span style="display:flex;"><span>@AfterTest<span style="color:#888">
@@ -222,7 +256,7 @@
                 <span style="font-weight: 700;">Conclusion</span>
               </h3>
 	   <p>
-      <span style="font-size: 1.4rem;">Congratulations! You've just completed your first Selenium test automation using IntelliJ and TestNG. By following the steps in this guide, you've set up your environment, written a simple test to open a webpage, and extracted the page title.</span>
+      <span style="font-size: 1.4rem;">Congratulations! You've just completed your first Selenium test automation using IntelliJ and TestNG. By following the steps in this guide, you've set up your environment, written a simple test to open a webpage, extracted the page title, and perform a search.</span>
      <p>
       <span style="font-size: 1.4rem;">This is the first step toward building more complex and robust automated tests. In the next chapter, we are going to learn more versatile and advanced commands.</span>
      <p>
